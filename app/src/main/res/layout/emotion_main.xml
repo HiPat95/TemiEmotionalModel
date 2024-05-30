@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".EmotionActivity">
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/right_led"
+        android:layout_width="50dp"
+        android:layout_height="764dp"
+        android:layout_marginTop="18dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="18dp"
+        android:background="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:shapeAppearanceOverlay="@style/RoundedSquare" />
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/left_led"
+        android:layout_width="50dp"
+        android:layout_height="764dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="18dp"
+        android:layout_marginBottom="18dp"
+        android:background="#FFFFFF"
+        android:onClick="kill_me"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:shapeAppearanceOverlay="@style/RoundedSquare"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <ImageView
+        android:id="@+id/eyes"
+        android:layout_width="1121dp"
+        android:layout_height="672dp"
+        android:layout_marginStart="132dp"
+        android:layout_marginTop="70dp"
+        android:layout_marginEnd="131dp"
+        android:layout_marginBottom="185dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/eyes"
+        android:visibility="gone"/>
+    <ImageView
+        android:id="@+id/eyes1"
+        android:layout_width="1121dp"
+        android:layout_height="672dp"
+        android:layout_marginStart="132dp"
+        android:layout_marginTop="70dp"
+        android:layout_marginEnd="131dp"
+        android:layout_marginBottom="185dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/eyes1"
+        android:visibility="gone"/>
+
+    <VideoView
+        android:id="@+id/disgust_video"
+        android:layout_width="1121dp"
+        android:layout_height="672dp"
+        android:layout_marginStart="132dp"
+        android:layout_marginTop="70dp"
+        android:layout_marginEnd="131dp"
+        android:layout_marginBottom="185dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:visibility="gone"/>
+
+    <VideoView
+        android:id="@+id/happyness_video"
+        android:layout_width="1121dp"
+        android:layout_height="672dp"
+        android:layout_marginStart="132dp"
+        android:layout_marginTop="70dp"
+        android:layout_marginEnd="131dp"
+        android:layout_marginBottom="185dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:visibility="gone"/>
+    <VideoView
+        android:id="@+id/anger_video"
+        android:layout_width="1121dp"
+        android:layout_height="672dp"
+        android:layout_marginStart="132dp"
+        android:layout_marginTop="70dp"
+        android:layout_marginEnd="131dp"
+        android:layout_marginBottom="185dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:visibility="gone"/>
+
+    <VideoView
+        android:id="@+id/fear_video"
+        android:layout_width="1121dp"
+        android:layout_height="672dp"
+        android:layout_marginStart="132dp"
+        android:layout_marginTop="70dp"
+        android:layout_marginEnd="131dp"
+        android:layout_marginBottom="185dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:visibility="gone"/>
+
+    <VideoView
+        android:id="@+id/sadness_video"
+        android:layout_width="1121dp"
+        android:layout_height="672dp"
+        android:layout_marginStart="132dp"
+        android:layout_marginTop="70dp"
+        android:layout_marginEnd="131dp"
+        android:layout_marginBottom="185dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:visibility="gone"/>
+
+    <VideoView
+        android:id="@+id/surprise_video"
+        android:layout_width="1121dp"
+        android:layout_height="672dp"
+        android:layout_marginStart="132dp"
+        android:layout_marginTop="70dp"
+        android:layout_marginEnd="131dp"
+        android:layout_marginBottom="185dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:visibility="gone"/>
+    <VideoView
+        android:id="@+id/neutral_video"
+        android:layout_width="1121dp"
+        android:layout_height="672dp"
+        android:layout_marginStart="132dp"
+        android:layout_marginTop="70dp"
+        android:layout_marginEnd="131dp"
+        android:layout_marginBottom="185dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:visibility="gone"/>
+
+    <VideoView
+        android:id="@+id/relaxation_video"
+        android:layout_width="1121dp"
+        android:layout_height="672dp"
+        android:layout_marginStart="132dp"
+        android:layout_marginTop="70dp"
+        android:layout_marginEnd="131dp"
+        android:layout_marginBottom="185dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:visibility="gone"/>
+    <!-- <Button
+         android:id="@+id/button"
+         android:layout_width="276dp"
+         android:layout_height="130dp"
+         android:layout_marginStart="502dp"
+         android:layout_marginTop="643dp"
+         android:layout_marginEnd="502dp"
+
+         android:layout_marginBottom="27dp"
+         android:onClick="doSomething"
+         android:text="LED ACTIONS"
+         app:iconTint="#009688"
+         app:layout_constraintBottom_toBottomOf="parent"
+         app:layout_constraintEnd_toEndOf="parent"
+         app:layout_constraintStart_toStartOf="parent"
+         app:layout_constraintTop_toTopOf="parent" /> -->
+
+</androidx.constraintlayout.widget.ConstraintLayout>
